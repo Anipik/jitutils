@@ -80,7 +80,6 @@ pushd %__root%
 :: Clone the jitutils repo
 
 git clone https://github.com/Anipik/jitutils.git
-git checkout Rid2
 if errorlevel 1 echo ERROR: clone failed.&set __ExitCode=1&goto :script_exit
 if not exist .\jitutils echo ERROR: can't find jitutils directory.&set __ExitCode=1goto :script_exit
 
