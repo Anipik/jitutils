@@ -219,7 +219,7 @@ namespace ManagedCodeGen
                     // If the user didn't specify a compile_commands.json, we need to see if one exists, and if not, create it.
                     if (!_untidy && _compileCommands == null)
                     {
-                        string[] compileCommandsPath = { _rootPath, "..", "..", "artifacts", "nmakeobj", "win" + _arch + "." + _build, "compile_commands.json" };
+                        string[] compileCommandsPath = { _rootPath, "..", "..", "artifacts", "nmakeobj", "win." + _arch + "." + _build, "compile_commands.json" };
                         _compileCommands = Path.Combine(compileCommandsPath);
                         _rewriteCompileCommands = true;
 
